@@ -2,10 +2,10 @@
 
 class MainClass
 {
-    static string ShowColor(string name)
+    static string ShowColor(string name, int userage)
     {
 
-        Console.WriteLine("{0}, напишите свой любимый цвет на английском с маленькой буквы", name);
+        Console.WriteLine("{0}, {1}\nНапишите свой любимый цвет на английском с маленькой буквы", name, userage);
         var color = Console.ReadLine();
 
         switch (color)
@@ -58,7 +58,7 @@ class MainClass
 
         for (int i = 0; i < favcolor.Length; i++)
         {
-            favcolor[i] = ShowColor(name);
+            favcolor[i] = ShowColor(name, age);
         }
 
         Console.WriteLine("Ваши любимые цвета:");
