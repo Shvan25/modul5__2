@@ -4,10 +4,9 @@ class Program
 {
     static void Main(string[] args)
     {
-        int num = 5;
-        var result = new int[num];
-        result = GetArrayFromConsole(num);
-        SortArray(result);
+        var array = GetArrayFromConsole();
+        
+        var sortarray = SortArray(array);
     }
     static int[] GetArrayFromConsole(int num = 5)
     {
