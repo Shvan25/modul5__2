@@ -4,7 +4,7 @@ class Program
 {
     static void Main(string[] args)
     {
-        var array = GetArrayFromConsole();
+        var array = GetArrayFromConsole(3);
         
         var sortarray = SortArray(array);
     }
