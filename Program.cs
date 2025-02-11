@@ -4,13 +4,14 @@ class Program
 {
     static void Main(string[] args)
     {
-        var result = new int[5];
-        result = GetArrayFromConsole(result);
+        int num = 5;
+        var result = new int[num];
+        result = GetArrayFromConsole(num);
         SortArray(result);
     }
-    static int[] GetArrayFromConsole(int[] array)
+    static int[] GetArrayFromConsole(int num = 5)
     {
-        var result = new int[5];
+        var result = new int[num];
 
         for (int i = 0; i < result.Length; i++)
         {
